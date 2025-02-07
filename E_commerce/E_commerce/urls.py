@@ -20,7 +20,7 @@ from product_management import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('add/',views.Addproduct.as_view()),
+    path('addproduct/',views.Addproduct.as_view()),
     path('addreview/',views.Reviewproductview.as_view()),
     
     path('deletereview/',views.Deletereview.as_view()),
