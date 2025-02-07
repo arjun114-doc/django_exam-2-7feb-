@@ -24,7 +24,7 @@ urlpatterns = [
     path('addreview/',views.Reviewproductview.as_view()),
     
     path('deletereview/',views.Deletereview.as_view()),
-    path('showreview/<int:pk>',views.Deletereview.as_view()),
+    path('showreview/<int:pk>',views.Review_of_a_product.as_view()),
     path('averagereview/',views.AverageReview.as_view()),
     
 ]
