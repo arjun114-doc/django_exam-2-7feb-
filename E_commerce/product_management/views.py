@@ -34,6 +34,7 @@ class Deletereview(View):
     def get(self,request, **kwargs):
         id=kwargs.get('pk')
         Review.objects.get(id=id).delete()
+        return render(request,'deletedsuccess.html')
         
 class Review_of_a_product(View):
     def get(self,request, **kwargs):
