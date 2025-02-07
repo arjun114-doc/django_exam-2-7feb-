@@ -35,7 +35,7 @@ class Deletereview(View):
         id=kwargs.get('pk')
         Review.objects.get(id=id).delete()
         
-class Readreview(View):
+class Review_of_a_product(View):
     def get(self,request, **kwargs):
         id=kwargs.get('pk')
         data=Review.objects.get(id=id)
